@@ -56,3 +56,16 @@ h1, h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
+
+/* 1 */
+
+.grid-1{
+    display: grid;
+}
+
+/* 2 */
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 300px;
+}

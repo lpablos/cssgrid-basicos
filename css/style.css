@@ -67,5 +67,23 @@ h1, h2 {
 
 .grid-2{
     display: grid;
-    grid-template-columns: 300px;
+    /* Difinicion de columnas */
+    grid-template-columns: 300px 300px 300px;
 }
+.grid-2 .box:nth-child(2){
+    /* Desde que columna inicio y en cual finalizo */
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+
+    /* Forma Simplificada parametro start / end */
+    grid-column: 1 / 2;
+
+}
+
+/* 3 */
+
+.grid-3 {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+}
+

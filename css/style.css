@@ -98,3 +98,30 @@ h1, h2 {
 
 }
 
+/* 4 */
+
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.grid-4 .box:nth-child(2){
+    /* POsicionar un div despues de su lugar */
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+
+    /* forma abreviada */
+    /* grid-column: 3 / 4; */
+
+    /*  */
+    background-color: cornflowerblue;
+    /* De la 2 hasta el ligar 4 */
+    grid-column: 2 / 4;
+    /* Con estandar seria asi */
+    /* grid-column: 2 / span 2;  */
+
+    grid-row: 1 / 3;
+    /* grid-row: 1 / span 2; */
+}
+

@@ -42,6 +42,7 @@ h1, h2 {
     margin: 5rem 0;
 }
 
+/* Centra el contenedor */
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -157,3 +158,22 @@ h1, h2 {
     el salto de linea */
 }
 
+/* 7 */
+
+.grid-7 {
+    display: grid;
+    /* Usar fracciones es mejor por que no usas porcentakes que tienes
+    que calcular asi puedes meter las cantidades ya sea a las columnas
+    o aun solo elemento */
+
+    /* grid-template-columns: 2fr repeat(2, 1fr); */
+
+
+    /* Aqui porder realizar el shoetform de gird con fracciones */
+    height: 500px;
+    /* Aqui se define la fraccion de altura respecto al calculo 
+    de lo que se definio de altura */
+    grid: repeat(2, 1fr) / repeat( 3, 1fr);
+
+
+}

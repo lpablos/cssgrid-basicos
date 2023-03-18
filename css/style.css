@@ -177,3 +177,9 @@ h1, h2 {
 
 
 }
+
+.grid-8 {
+    display: grid;
+    height: 60rem;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+}

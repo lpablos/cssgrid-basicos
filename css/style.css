@@ -178,8 +178,70 @@ h1, h2 {
 
 }
 
+/* 8 */
+
 .grid-8 {
     display: grid;
     height: 60rem;
-    grid: repeat(2, 1fr) / repeat(3, 1fr);
+    grid: repeat(2, 20rem) / repeat(3, 1fr);
+    /* Esto es añadir separaciones columna y row */
+    /* column-gap: 4rem;
+    row-gap: 4rem; */
+
+    /* Forma corta  row columns ó para todos los datos 
+    solo ponemos un vamor*/
+    gap: 4rem 2rem;
 }
+
+.grid-8 .box{
+    margin: 0;
+}
+
+/* 9 */
+
+.grid-9 {
+    display: grid;
+    /* 1200px */
+    height: 120 rem;
+    
+    /* Dibujando areas para el template relacionadas
+    con el numero de columnas que definas*/
+    grid-template-areas:    "header header header"
+                            "nav nav nav"
+                            "contenido contenido sidebar"
+                            "footer footer footer";
+    /* Definiendo las posiciones de las columnas */
+    grid-template-columns: repeat(3, 1fr);
+    
+    /* Definiendo la altura de cada contenedor por medio de row */
+    /* grid-template-rows: 25rem 10rem 60rem 25rem; */
+    grid-template-rows:  2.5fr 1fr 6fr 2.5fr;
+
+    gap: 4rem;
+}
+
+.grid-9 .box{
+    margin: 0;
+}
+
+.grid-9 .box:nth-child(1){
+    grid-area: header;
+}
+
+.grid-9 .box:nth-child(2){
+    grid-area: nav;
+}
+
+.grid-9 .box:nth-child(3){
+    grid-area: contenido;
+}
+
+.grid-9 .box:nth-child(4){
+    grid-area: sidebar;
+}
+
+.grid-9 .box:nth-child(5){
+    grid-area: footer;
+}
+
+
